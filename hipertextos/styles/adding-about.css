@@ -32,7 +32,7 @@
 .cover-page #dark a {color:var(--color-white);font-size:26px;line-height:21px;font-weight:lighter;}
 .cover-page #dark a:hover {text-decoration:none;} 
 #horari h3 {font-size:48px;line-height:1.5em;}
-
+#page-footer {margin-top:-23px;}
 #layout section {border:thin solid var(--color-softgrey);}
 
 @media (max-width: 1250px) {
