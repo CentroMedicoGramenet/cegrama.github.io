@@ -1,52 +1,91 @@
 # Name of your site (displayed in the header)
-name: Isard Miralles
+name: Centro Médico Gramenet
 
 # Short bio or description (displayed in the header)
-description: Dissenyador, il·lustrador i artista visual de Barcelona
+description: Certificados médicos y psicotécnicos
+alternativa: Permiso de conducir y armas
+obtenciones: 35
 
-# Oferta Web Portada
-web: Hosting Gratuït, sense plantilles, 100% adaptat a tots els dispositius i altament personalitzable.
-brand: Marca Corporativa
-grafics: Grafísmes
-music: Gestió Cultural
+# Info
+info1: Sin cita previa
+info2: Sin fotos, las hacemos aquí
+info3: Revisión médica en 15 min
+info4: Tu Carnet renovado al momento
+
+# Permisos
+p1: Coche
+p2: Moto
+p3: Camión
+p4: Náutica
+p5: Depotivos
+p6: Seguridad privada
+p7: Animales peligrosos
+p8: Permiso de armas
+p9: Certificados médicos
+
+# Horari
+mananas: de 12h a 14h
+tardes: De 16:30h a 19:30h
+
+# Santa Coloma
+city: Santa Coloma de Gramanet
+location: c/ Llorenç Serra, 5, Entlo. 3ª, Santa Coloma de Gramanet
+phone: +34 933 86 54 44
+email: correu@gmail.com
+
+# Badalona
+city2: Badalona
+location2: c/ Temple, 24, 08911, Badalona
+phone2: +34 933 844 892
+email2: correu@gmail.com
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/9498876?s=400&u=aee7e89c69bf3dee9903bc85ec6aa33985148325&v=4
+avatar: https://avatars0.githubusercontent.com/u/36928139?s=460&v=4
+logo: ./hipertextos/brand/logo.png
 
-phone: 658973617
-serveis: Grafísmes
-serveis-lead: Creatius, originals i fets a mà
-portfoli: Creacions
-portfoli-lead: Treballs destacats
+# Sections
+section1: Revisiones
+section1d: Tipos de Certificados y Preguntas frecuentes
+section2: Galeria
+section2d: galeria de Fotos del Centro
+section3:
+section3d:
+section4:
+section4d:
+section5:
+section5d:
+section6: Nosotros
+section6d: Más Información
 
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: isardmt@gmail.com
-  facebook: Isard-Miralles-261219727225263
-  flickr:
-  github: isardmt/isardmt.github.io
-  behance: isardmiralles
-  instagram: isardmiralles
+  email:
+  facebook:
+  instagram:
+  twitter:
   linkedin:
   pinterest:
-  rss: rss
-  twitter: isardmt
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: c/IsardMiralles
+  youtube:
   googleplus: 
+  tripadvisor:
+  flickr:
+  github:
+  behance:  
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  rss: true
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-1636204-1
+google_analytics: 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.isardmiralles.com
+url: http://www.weburl.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -57,7 +96,6 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
 
 permalink: /:title/
 
@@ -95,6 +133,6 @@ exclude:
 defaults:
   -
     scope:
-      path: "assets/print"
+      path: "assets/bio"
     values:
       image: true
