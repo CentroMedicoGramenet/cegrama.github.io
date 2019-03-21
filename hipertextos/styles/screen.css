@@ -745,7 +745,7 @@ aside > nav label {
 }
 nav a:hover,
 nav label:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 nav ul {
 	border: var(--one-pixel) solid transparent;
@@ -782,7 +782,7 @@ nav form {
 	text-align: right;
 	top: var(--fifteen-pixel);
 	right: 0;
-	width: 8em;
+	width: 10em;
 	z-index: 2;
 }
 nav li form {
@@ -798,7 +798,7 @@ nav form input:focus {
 	text-align: center;
 }
 nav form input[type=text] {
-	width: 5em;
+	width: 7em;font-size:15px;line-height:16px;
 }
 nav form input[type=text]:focus {
 	background-color: var(--color-white);
@@ -808,17 +808,16 @@ nav form input[type=text]:focus {
 }
 nav form input[type=submit] {
 	background: var(--color-white);
-	border: var(--two-pixel) solid currentColor;
-	color: var(--color-grey);
-	display: none;
-	height: var(--fourtytwo-pixel); 	
+	border: none !important;position:absolute;
+	color: var(--color-hardgrey);
+	height: var(--thirty-pixel); 	
 	line-height: var(--thirtytwo-pixel); 	
-	margin-left: -2.25em;
-	padding: 0 var(--fifteen-pixel);
-	z-index: 10;
+	margin-left: -1.85em;
+	padding: 2px 18px 0 19px;
+	z-index: 10;transform: rotate(40deg);
 }
 nav form input:focus ~ input[type=submit] {
-	display: inline-block;
+	display: inline-block;color: var(--color-grey);padding: 4px 18px 0 12px;
 }
 nav label {
 	cursor: pointer;
@@ -988,7 +987,7 @@ figure div {
 	padding-top: 0;
 	height: 0;
 	overflow: hidden;
-	z-index: 5;
+	z-index: 6;
 }
 figure div iframe {
 	position: absolute;
@@ -1045,7 +1044,7 @@ em label:hover {
 	color: var(--color-link);
 }
 a:hover svg {
-	fill: var(--color-link);
+	fill: var(--color-white);
 }
 a:active,
 a:visited:active {
@@ -1058,18 +1057,26 @@ nav a:hover,
 nav label:hover {
 	border: var(--one-pixel) solid currentColor;
 }
+#page .posts h1 {color:var(--color-grey);text-transform:capitalize ;}
+#page #page-nav {background-color: var(--color-soft-grey);color:var(--color-softstarred);border-bottom:0px solid transparent;}
+.cat-post h6 a {color:var(--color-softstarred);text-decoration: none;}
 
-/* Soft theme */
+/* Red theme */
 
 #theme-soft:checked ~ #page,
-#theme-soft:checked ~ #site-nav,
-#theme-soft:checked ~ #page-nav {
+#theme-soft:checked ~ #site-nav {
 	background-color: var(--color-soft);
 	color: var(--color-softtext);	
 }
-#theme-soft:checked ~ #page a {
-	color: var(--color-softblue);	
+#theme-soft:checked ~ #page #page-nav {
+	background-color: var(--color-white);
+    color:var(--color-softtext);
 }
+#theme-soft:checked ~ #page .posts h1 {color:var(--color-softtext);}
+#theme-soft:checked ~ #page a {
+	color: var(--color-softtext);	
+}
+#theme-soft:checked ~ #page .cat-post h6 a {color:var(--color-softtext);}
 #theme-soft:checked ~ #page em a,
 #theme-soft:checked ~ #page em label,
 #theme-soft:checked ~ #page em button {
@@ -1078,41 +1085,46 @@ nav label:hover {
 }
 #theme-soft:checked ~ #page a:visited,
 #theme-soft:checked ~ #page em a:visited {
-	color: var(--color-orange);
+	color: var(--color-medtext);
 }
 #theme-soft:checked ~ #page a:visited svg {
-	fill: var(--color-red);
+	fill: var(--color-medtext);
 }
 #theme-soft:checked ~ #page nav label:hover,
 #theme-soft:checked ~ #page a:hover,
 #theme-soft:checked ~ #page a:visited:hover {
-	color: var(--color-blue);
+	color: var(--color-softred);
 }
 #theme-soft:checked ~ #page a:hover svg {
-	fill: var(--color-blue);
+	fill: var(--color-white);
 }
 #theme-soft:checked ~ #page a:active,
 #theme-soft:checked ~ #page a:visited:active {
-	color: var(--color-violet);
+	color: var(--color-red);
 }
 #theme-soft:checked ~ #page a:visited:active svg {
-	fill: var(--color-violet);
+	fill: var(--color-red);
 }
 #theme-soft:checked ~ #page nav a:hover,
 #theme-soft:checked ~ #page nav label:hover {
-	background-color: var(--color-translucentwhite);
+	background-color: transparent;
 }
 
 /* Dark theme */
 
 #theme-dark:checked ~ #page,
-#theme-dark:checked ~ #site-nav,
-#theme-dark:checked ~ #page-nav {
+#theme-dark:checked ~ #site-nav {
 	background-color: var(--color-softblack);
-	color: var(--color-white);	
+	color: var(--color-softgrey);	
 }
+#theme-dark:checked ~ #page #page-nav {
+	background-color: var(--color-hard-grey);
+    color:var(--color-softgrey);
+}
+#theme-dark:checked ~ #page .posts h1 {color:var(--color-hard-grey);}
+#theme-dark:checked ~ #page .cat-post h6 a {color:var(--color-grey);}
 #theme-dark:checked ~ #page a {
-	color: var(--color-white);	
+	color: var(--color-softgrey);	
 }
 #theme-dark:checked ~ #page em a,
 #theme-dark:checked ~ #page em label,
@@ -1122,10 +1134,10 @@ nav label:hover {
 }
 #theme-dark:checked ~ #page a:visited,
 #theme-dark:checked ~ #page em a:visited {
-	color: var(--color-orange);
+	color: var(--color-grey);
 }
 #theme-dark:checked ~ #page a:visited svg {
-	fill: var(--color-red);
+	fill: var(--color-hardgrey);
 }
 #theme-dark:checked ~ #page nav label:hover,
 #theme-dark:checked ~ #page a:hover,
@@ -1142,10 +1154,7 @@ nav label:hover {
 #theme-dark:checked ~ #page a:visited:active svg {
 	fill: var(--color-violet);
 }
-#theme-dark:checked ~ #page nav a:hover,
-#theme-dark:checked ~ #page nav label:hover {
-	background-color: var(--color-translucentwhite);
-}
+
 
 /* Emphatic link colors (important reset) */
 
@@ -1190,6 +1199,7 @@ nav label {
 	--color-yellow: rgba(244,192,21,1);
 	--color-orange: rgba(244,82,15,1);
 	--color-red: rgba(221,0,0,1);
+	--color-softred: rgba(212,0,0,1);
 	--color-violet: rgba(115,44,147,1);
 	--color-softblue: rgba(100,100,255,1);
 	--color-blue: rgba(50,122,174,1);
@@ -1199,6 +1209,7 @@ nav label {
 	--color-softgrey: rgba(220,220,220,1);
 	--color-grey: rgba(150,150,150,1);
 	--color-hardgrey: rgba(90,90,90,1);
+	--color-hard-grey: rgba(40,40,40,1);
 	--color-black: rgba(0,0,0,1);
 	--color-softblack: rgba(10,10,10,1);
 	--color-soft-black: rgba(23,20,21,1);
@@ -1206,16 +1217,19 @@ nav label {
 	--color-link: rgba(50,122,174,1);
 	--color-vlink: rgba(20,100,140,1);
 
-	--color-soft: rgba(247,246,255,1);
-	--color-softtext: rgba(89,81,147,1);
-	--color-softstarred: rgba(214,208,255,1);
+	--color-soft: rgba(230,230,230,1);
+	--color-softtext: rgba(180,60,60,1);
+	--color-medtext: rgba(160,50,50,1);
+	--color-softstarred: rgba(60,60,60,1);
 	
 	--color-translucentblack: rgba(0,0,0,.5);
 	--color-translucentwhite: rgba(255,255,255,.5);
+	--color-transwhite: rgba(255,255,255,.75);
+	--color-transgrey: rgba(130,130,130,.32);
 	
 	--color-background: rgba(255,255,255,1);
 	
-	--font-default: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	--font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	--font-code: Monaco, Menlo, Consolas,'Courier New', monospace;
 }
 	

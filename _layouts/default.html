@@ -1,80 +1,82 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es-ES">
   <head>
     <meta name="encoding" charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<link rel="canonical" href="http://isardmiralles.com/"/>
-
+	<link rel="canonical" href="http://bonrollobarcelona.com/"/>
+	
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
-	{% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-blog.css" />{% endif %}
+    {% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-carta.css" />{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />
-    {% if page.comments %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
+  	{% if page.lightbox %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-fotos.css" />{% endif %}
+  	{% if page.lightbox %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/css/lightbox.min.css" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300,100,900" rel="stylesheet">
     {% include favicons.html %}
-    
-	<!-- Google Tag Manager -->
-		<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-WXMBJZW');</script>
-	<!-- End Google Tag Manager -->
 	
   </head>
 
   <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMBJZW"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-		<!-- Theme inputs (invisibles) -->		
-		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden>
-		
+	
 	<!-- Page content -->
 	<div class="page" id="page">
+	{% include partials/navigation/nav.html %}
       {{ content }}
+      
+		{% if page.foot %}
+		<hr>
+		<div id="foot-cover" class="cover">
+			<div>
+			<h5><small><i class="icon-flickr"></i></small></h5>
+			<h4><small>{{ site.description }}<br>{{ site.alternativa }}</small></h4>
+			<h5><small><i class="icon-flickr"></i></small></h5>
+			</div>
+		</div>
+		{% endif %}
+		{% if page.footmap %}
+    	<div id="mapa">
+  		{% include mapa.html %} 
+		</div>
+		{% endif %}
     {% include partials/footer.html %}
 	</div>
 
 		<!-- Out of page
-		================================================== -->	
+		================================================== -->
+		
     {% include partials/dialog.html %}  
-    
+		
     <!-- Scripts
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
-  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
-  	{% if page.comments %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>
-	<script type="text/javascript">
-  		$(document).ready(function() {
-    		$("[href]").each(function() {
-    		    if (this.href == window.location.href) {
-    	        	$(this).addClass("active");
-    	    	}
-    		});
+  	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+  	{% if page.lightbox %}<script src="{{ site.baseurl }}/hipertextos/js/lightbox.min.js"></script>{% endif %}
+	<script>
+		// Collapse & accordion
+		$('.jcollapser .jcollapsed').toggleClass('closed');
+		$('.jcollapser .jtrigger').click(function(e){
+			$(this).next('.jcollapsed').toggleClass('closed anime anm-fadeIn').siblings('.jcollapsed:visible').toggleClass('closed anime anm-fadeIn');
 		});
-  	</script>{% endif %}
-  	<script type="text/javascript">
-jQuery(document).ready(function() {
-	jQuery('.post').addClass("hidden").viewportChecker({
-	    classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-	    offset: 100    
-	   });   
-});            
-</script>
+ 		// Notification
+		$('.notification .button-close').click(function(){
+			$(this).closest('.notification').toggleClass('closed');
+		});
+		// Dialogs
+		$('.button-modal, .jdialog .button-close').click(function(){
+			var currentDialog = $(this).attr('href');
+			$(currentDialog).toggleClass('closed anime anm-moveFromTop');
+		});		
+	</script>
+	
     {% include analytics.html %}
   </body>
 </html>

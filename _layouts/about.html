@@ -1,94 +1,119 @@
 <!DOCTYPE html>
-<html lang="ca-ES">
+<html lang="es-ES">
   <head>
     <meta name="encoding" charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<link rel="canonical" href="http://isardmiralles.com/contacte"/>
+	<link rel="canonical" href="http://centromedicogramenet.com/nosotros"/>
+	
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/screen.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/adding-about.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/hipertextos/styles/anime.css" />    
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300,100,900" rel="stylesheet">
+	
     {% include favicons.html %}
-	<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-WXMBJZW');</script>
-	<!-- End Google Tag Manager -->
 
   </head>
 
   <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMBJZW"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 
 	<!-- Page content -->
 	<div class="page cover-page" id="page">
-	{% include partials/navigation/nav-about.html %}
-		<header id="page-header" class="about-cover anm-moveFromTop">
-			<div>
-				<h1 class="anm-moveFromBottomFade delay-100">{{ page.title }}</h1>
+		{% include partials/navigation/nav.html %}
+		<header id="page-header" class="cover anm-moveFromTop" style="background-image: url('{{ site.baseurl }}/hipertextos/brand/contacte.jpg');">
+			<div class="anm-scaleUpDown delay-100">
+				<section id="dark">
+					<div id="contacte" class="thumb-8 pushed-2">
+						<a class="thumb-5" href="{{ site.baseurl }}" title="Tornar a l'inici"><img src="{{ site.baseurl }}/hipertextos/brand/logo.png"></a>
+						<div class="thumb-7">
+							<h3>{{ page.title }}</h3>
+						</div>
+						<div>
+							<em class="thumb"><a href="tel:{{ site.phone }}" title="Llamar"> {{ site.phone }}</a></em>
+							<em class="thumb"><a href="mailto:{{ site.email }}" title="{{ site.email }}"> {{ site.email }}</a></em>
+							<em class="thumb button-modal"><a href="#dialog" title="Ver el mapa"> {{ site.location }}</a></em>
+						</div>
+					</div>
+				</section>
+				<section id="follows">
+        			{% include svg-icons.html %}
+				</section>
 			</div>
 		</header>
 		<main id="page-main">
-			<div>
-				<section class="thumb-9 anm-moveFromBottomFade delay-200">
-					<h1 class="anm-scaleUpCenter delay-400">
-					<img src="https://avatars0.githubusercontent.com/u/9498876?s=400&u=aee7e89c69bf3dee9903bc85ec6aa33985148325&v=4" id="avatar" class="anm-scaleUp delay-400" rel="Avatar de Isard Miralles">
-					Isard Miralles</h1>
-					{{ content }}
-					<br>
-						<h4 class="anm-scaleUp delay-400"><a href="mailto:isardmt@gmail.com">isardmt@gmail.com</a></h4>
-					<strong>
-						<em class="anm-scaleUp delay-600"><a href="tel:+34 {{ site.phone }}"><i class="icon-mobile"></i>658973617</a></em>
-						<em class="anm-scaleUp delay-700"><a href="https://www.facebook.com/{{ site.footer-links.facebook }}" target="blank"><i class="icon-facebook"></i> Isard Miralles</a></em>
-						<em class="anm-scaleUp delay-800"><a href="https://www.twitter.com/{{ site.footer-links.twitter }}" target="blank"><i class="icon-twitter"></i> @isardmt</a></em>
-					</strong>
-					<br>
-				</section>
-				<aside class="thumb-3 anm-moveFromRightFade delay-1000">
-					<h2>Links</h2>
-					<figure>
-						<p>Últims treballs</p>
-						<em><a href="http://oldsteam.com" target="blank" alt="Visitar oldsteam.com"><i class="icon-cloud-upload"></i>OldSteam.com</a></em><br>
-						<em><a href="http://bonrollo.com" target="blank" alt="Visitar bonrollo.com"><i class="icon-cloud-upload"></i>Bonrollo.com</a></em><br>
-						<em><a href="http://sondelvent.com" target="blank" alt="Visitar sondelvent.com"><i class="icon-cloud-upload"></i>Sondelvent.com</a></em><br>
-						<em><a href="http://videosmanguis.net" target="blank" alt="Visitar videosmanguis.net"><i class="icon-cloud-upload"></i>VideosManguis.net</a></em><br>
-						<br>
-						<p>Enllaços Gratuïts</p>
-						<em><a href="https://isardmiralles.com/brushes/"><i class="icon-cloud-download"></i>Ps Brushes</a></em><br>
-					</figure>
-				</aside>
-				<hr>									
+			<div id="layout" class="anm-fadeIn delay-700">
+				<div id="intro">
+					<div id="about">
+						<div class="thumb-4">
+							<span class="icon-build"></span>
+							<h4>{{ page.historia }}</h4>
+							<p>{{ content }}</p>
+						</div>
+						<div class="thumb-4">
+							<span class="icon-handwriting"></span>
+							<h4>Servicios</h4>
+							<p>{{ page.servicios }}</p>
+						</div>
+						<div class="thumb-4">
+							<span class="icon-user"></span>
+							<h4>Profesionales</h4>
+							<p>{{ page.profesionales }}</p>
+						</div>
+						<hr>
+						<div>
+							<h3 class="section-title">Gracias por confiar en nosotros</h3>
+						</div>
+					</div>
+					<hr>
+					<div id="horari">
+  						{% include horari.html %} 
+  						<hr>
+					</div>
+					<hr>
+				</div>
 			</div>
-			{% include partials/credits.html %}
-    		{% include partials/coffee.html %}   		
 		</main>
+    	<div id="mapa">
+  		{% include mapa.html %} 
+		</div>
 		{% include partials/footer.html %}
 	</div><!-- /#page -->
 	
 		<!-- Out of page
-		================================================== -->	
+		================================================== -->
+		
     {% include partials/dialog.html %}  
-    {% include partials/rights.html %}  
-
+		
     <!-- Scripts
     ================================================== -->
   	<script src="{{ site.baseurl }}/hipertextos/js/jquery.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/anime.js"></script>
   	<script src="{{ site.baseurl }}/hipertextos/js/icons.js"></script>
+	<script>
+		// Collapse & accordion
+		$('.jcollapser .jcollapsed').toggleClass('closed');
+		$('.jcollapser .jtrigger').click(function(e){
+			$(this).next('.jcollapsed').toggleClass('closed anime anm-fadeIn').siblings('.jcollapsed:visible').toggleClass('closed anime anm-fadeIn');
+		});
+ 		// Notification
+		$('.notification .button-close').click(function(){
+			$(this).closest('.notification').toggleClass('closed');
+		});
+		// Dialogs
+		$('.button-modal, .jdialog .button-close').click(function(){
+			var currentDialog = $(this).attr('href');
+			$(currentDialog).toggleClass('closed anime anm-moveFromTop');
+		});		
+	</script>
+	
     {% include analytics.html %}
   </body>
 </html>

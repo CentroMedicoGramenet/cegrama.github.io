@@ -1,14 +1,29 @@
-		<footer id="page-footer" class="anm-fadeIn delay-500">
+		<footer id="page-footer">
 			<div>
-				<hr>
-				<em><small><a id="go-up" href="#page" title="Tornar Amunt"><img src="{{ site.baseurl }}/hipertextos/svg/arrow-up.svg" alt="tornar a dalt"></a></small></em>
-				<section id="follows">
-            		{% include svg-icons.html %}
-    			</section>
+    			<a href=".{{ site.baseurl }}" title="Página Principal" id="footer-home">
+    			<img id="footer-logo" src="{{ site.baseurl }}/hipertextos/brand/logo-white.png" alt="Centro Médico Gramenet"></a>
+    			<hr>
+    			<div class="thumb-6">
+    				<h5><a href="{{ site.baseurl }}" title="Volver" rel="Cargar la pàgina principal">Centro Médico Gramenet</a></h5>
+    				<p>
+    				{{ site.location }}<br>
+    				{{ site.email }}<br>
+    				{{ site.phone }}<br>
+    				</p>
+    			</div>
+    			<div class="thumb-6">
+    				<h5><a href="{{ site.baseurl }}" title="Volver" rel="Cargar la pàgina principal">Centro Médico Badalona</a></h5>
+    				<p>
+    				{{ site.location2 }}<br>
+    				{{ site.email2 }}<br>
+    				{{ site.phone2 }}<br>
+    				</p>
+    			</div>
+    			<hr>
 				<p>
-				Disseny Web: <a href="http://isardmiralles.com/" target="blank" title="Disseny Gràfic">Isard Miralles</a>
-				Basat en: <a href="https://jekyllrb.com/" target="blank" title="Jekyll CMS">Jekyll Now</a>
-				amb <a href="http://hipertextos.github.io" target="blank" title="Hipertextos Framework">Barcelona CSS</a>. 
+				Edición Web: <a href="http://isardmiralles.com/" target="blank" title="Ir a la Web del Diseñador">Isard Miralles</a>
+				CMS: <a href="https://jekyllrb.com/" target="blank" title="Jekyll CMS">Jekyll Now {{ site.version }}</a>
+				CSS: <a href="http://hipertextos.github.io" target="blank" title="Barcelona CSS Framework">Barcelona CSS</a>. 
 				</p>
 			</div>
 		</footer>

@@ -1,0 +1,47 @@
+/* by Isard Miralles  ADDING EXTRA to CARTA - CSS */
+
+#page-header.carta-header {background-image: url("/hipertextos/brand/carta.jpg");background-color:var(--color-hardgrey);font-family:var(--font-default), sans-serif; text-transform: uppercase; border:none;
+    height: 260px;padding-top:100px;background-position: center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;
+    border:none;letter-spacing: .02em;overflow: hidden;text-align: center;}
+#page-header.carta-header h1 {font-weight: lighter ;font-size:2.2em;color:var(--color-white);}
+
+/* Classic Gallery */
+.listed .img-icon {width:32px;}
+.listed u {margin-left:12px;}
+.listed section {border:none;line-height:2em;font-size:0.2em;-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;}
+.imagens img {margin:0!important;padding:0!important;border:none;}
+.listed {padding:0!important;}
+.listed img {	margin:0!important;padding:0!important;	}
+.listed article { border:none;width: 100%;display: block;display: inline-block;margin:0!important;padding:0!important;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;}
+
+/* Footer fixed */
+main { margin-bottom: 0px;z-index: 1;background-color: var(--color-white);
+}
+@media (max-width: 1250px) {
+    #page-header.carta-header {height: 280px;padding-top:130px;}
+}
+@media (max-width: 1242px) {
+    #page-header.carta-header {height: 260px;padding-top:90px;}
+    .thumb-8 {width:58.3333333333%;}
+    .thumb-1 {max-width:16.6666666666%;}
+}
+@media (max-width: 768px) {
+    #page-header.carta-header {
+    	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
+    #foot-cover.cover {
+    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:top auto;background-position:fixed !important;}
+    #page-header.carta-header { height: 190px;padding-top:69px;}
+    .legends p {font-size: 12px;}
+    #page-nav div{height:69px;}
+	#page-nav a img {width:52px;height:52px;}
+    .thumb-3 {width:70%;}
+    .thumb-8 {width:70%;margin-top:-30px;}
+    .thumb-1 {width:20%;margin-top:-30px;}
+    #foot-cover h5 svg {padding:12px;}
+	#foot-cover h5 {margin-bottom:12px!important;}
+	#foot-cover h4 {font-size:1.9em;line-height:1em;margin-bottom:48px;}
+}
+@media (max-width: 432px) {
+	#page-header.carta-header { height: 150px;padding-top:45px;}
+    #page-header.carta-header, #foot-cover.cover {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;color:var(--color-grey);}
+}

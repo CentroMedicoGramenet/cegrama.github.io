@@ -1,13 +1,16 @@
 			<nav id="site-nav" class="nav-smart">
 				<div>
+					<a class="site-logo button-modal" href="#dialog" title="{{ site.name }}: Inicio"><img id="cover-logo" src="../hipertextos/brand/logo2.png" alt="{{ site.name }}"></a>
 					<input type="checkbox" id="mobnav" name="mobnav" aria-hidden="true" hidden> 
 					<strong><label for="mobnav">Menú<mark></mark></label></strong>
 					<div hidden>
-					<a href="{{ site.baseurl }}/serveis/" title="Serveis Gráfics">Serveis</a>	
-					<a href="{{ site.baseurl }}/portfoli/" title="Treballs i creacions gràfiques">Portfoli</a>
-					<a href="{{ site.baseurl }}/" title="Pàgina Principal" id="current-nav"><b>{{ site.name }}</b></a>
-					<a href="{{ site.baseurl }}/blog/" title="Blog personal">Blog</a>
-					<a href="{{ site.baseurl }}/contacte/" title="Informació i Contacte">Contacte</a>	
+						<a href="{{ site.baseurl }}/" title="Volver al Inicio"><b>{{ site.name }}</b></a>
+						{% if site.section1 %}<a href="{{ site.baseurl }}/revisiones" title="{{ site.section1d }}">{{ site.section1 }}</a>{% endif %}
+						{% if site.section2 %}<a href="{{ site.baseurl }}/galeria/" title="{{ site.section2d }}">{{ site.section2 }}</a>{% endif %}
+						{% if site.section3 %}<a href="{{ site.baseurl }}/{{ site.section3 }}" title="{{ site.section3d }}">{{ site.section3 }}</a>{% endif %}
+						{% if site.section4 %}<a href="{{ site.baseurl }}/{{ site.section4 }}/" title="{{ site.section4d }}">{{ site.section4 }}</a>{% endif %}
+						{% if site.section5 %}<a href="{{ site.baseurl }}/{{ site.section3 }}" title="{{ site.section3d }}">{{ site.section5 }}</a>{% endif %}
+						{% if site.section6 %}<a href="{{ site.baseurl }}/nosotros/" title="{{ site.section4d }}">{{ site.section6 }}</a>{% endif %}
 					</div>
 				 </div>
 			</nav>

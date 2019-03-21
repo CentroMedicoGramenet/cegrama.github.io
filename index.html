@@ -1,179 +1,52 @@
 ---
 layout: default
 home: true
-comments: true
-matte-demo:
+txtlogo: true
+imglogo: true
 
 ---
-    {% include partials/navigation/nav.html %}
-	{% include partials/head.html %}
-    <main id="page-main" role="main" class="darkmode anm-fadeIn">
-			<section id="covers">
-			<br>
-			{% include partials/navigation/covers.html %}
-			<hr>
-			<div id="web-oferta">
-				<hr class="lines">
-				<div>
-					<h2>Web</h2>
-					<img src="/img/responsive.png" class="front-responsive" rel="imatge relativa als diferents tamanys de pantalla">
-					<hr>
-					{% if site.web %}
-						<p>{{ site.web }}</p>
-					{% endif %}
-					<hr>
-					<img src="/img/html5css3.png" class="front-responsive" rel="llenguatge Html5 i Css3">
-					<hr>
-					<div id="fronters" class="thumb-8 pushed-2">
-						<div class="thumb-3 animeonscroll">
-							<img src="images/covers/disseny.jpg" class="circle">
-							<h4><small>Disseny Original</small></h4>
-						</div>
-						<div class="thumb-3 animeonscroll">
-							<img src="images/covers/bcncss.jpg" class="circle">
-							<h4><small>CSS Propi</small></h4>
-						</div>
-						<div class="thumb-3 animeonscroll">
-							<img src="images/covers/jekyll.jpg" class="circle">
-							<h4><small>Jekyll Now</small></h4>
-						</div>
-						<div class="thumb-3 animeonscroll">
-							<img src="images/covers/yinyang.jpg" class="circle">
-							<h4><small>Ninja</small></h4>
-						</div>
-						<br>
-					</div>
-					<hr>
-					<em><a class="next-top" href="#web-branding"><img class="nextt" src="hipertextos/svg/arrow.svg"></a></em>
-				</div>
-			</div>
-			<div id="web-branding">
-				<hr>
-				<div>
-					<h2>Branding</h2>
-					{% if site.web %}
-						<p>{{ site.brand }}</p>
-					{% endif %}
-					<hr>
-					<div id="fronters-brand" class="thumb-8 pushed-2">
-						<div class="thumb-3">
-							<h4><span class="icon-bars"></span> Anàlisis</h4>
-							<p>Anàlisis en profunditat sobre el projecte</p>
-						</div>
-						<div class="thumb-3 pushed-1">
-							<h4><span class="icon-lab"></span> Brainstorm</h4>
-							<p>Tormentes d'idees creatives, estils i grafísmes</p>
-						</div>
-						<div class="thumb-3 pushed-1">
-							<h4><span class="icon-handwriting"></span> Edició</h4>
-							<p>Fulls d'estil, tipografíes, imatges i logotips</p>
-						</div>
-						<hr>
-						<section class="columns-4">					
-							<article>
-								<a href="{{ site.baseurl }}/assets/branding/logos1.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos1.jpg" alt="Branding per al Chiringuitaly"></a>
-							</article>
-							<article>
-								<a href="{{ site.baseurl }}/assets/branding/logos2.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos2.jpg" alt="Branding per a De Billy a Billie"></a>
-							</article>
-							<article>
-    							<a href="{{ site.baseurl }}/assets/branding/logos3.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos3.jpg" alt="Branding per a Soundcrash"></a>
-							</article>
-							<article>
-								<a href="{{ site.baseurl }}/assets/branding/logos4.jpg" data-lightbox="roadtrip"><img class="imagens" src="{{ site.baseurl }}/assets/branding/logos4.jpg" alt="Branding per a Estenent el Desastre"></a>
-							</article>
-						</section>
-					</div>
-					<hr>			
-					<em><a class="next-top" href="#web-grafics"><img class="nextt" src="hipertextos/svg/arrow.svg"></a></em>
-				</div>
-			</div>
-			<div id="web-grafics">
-				<hr>
-				<div>
-					<h2>Grafísmes</h2>
-					{% if site.web %}
-						<p>{{ site.grafics }}</p>
-					{% endif %}
-					<br>
-						<div class="masked" style="background-image: url('{{ site.baseurl }}/img/home.jpg');">
-							<hr>
-						</div>
-					<div class="text-left thumb-6 pushed-6">
-						<h4>Il·lustració</h4>
-						<p>Creacions Artístiques 100% Originals</p>
-						<h4>Disseny</h4>
-						<p>Cartells, infografíes, maquetació de textos i imatges</p>
-						<h4>Matte Painting</h4>
-						<p>Recursos per a post-producció de cine (chroma i 3D Mapping)</p>
-						<h4>Retòc Digital</h4>
-						<p>Retòc de models, ombres/llums, Color, retalls i redimensions</p>
-						<h4>Fotografía</h4>
-						<p>Creació i edició de fotografíes per a us coorporatiu</p>
-						<h4>Xarxes Socials</h4>
-						<p>Creació i adaptació d'imatges per a Xarxes Socials</p>
-						<h4>Banc d'imatges</h4>
-						<p>Creació de bancs d'imatges temàtics de calitat i lliures de drets</p>
-					</div>
-					<hr>			
-					<em><a class="next-top" href="#web-music"><img class="nextt" src="hipertextos/svg/arrow.svg"></a></em>
-				</div>
-			</div>
-			<div id="web-music">
-				<hr>
-				<div>
-					<h2>Música</h2>
-					{% if site.web %}
-						<p>{{ site.music }}</p>
-					{% endif %}
-					<br>
-					<div id="fronters-music" class="thumb-8 pushed-2">
-						<div class="thumb-4">
-							<span class="icon-book"></span> 
-							<h4>Espectacles</h4>
-							<p>Més de 30 projectes musicals</p>
-						</div>
-						<div class="thumb-4">
-							<span class="icon-music"></span>
-							<h4>Disseny</h4>
-							<p>Música per a publicitat</p>
-						</div>
-						<div class="thumb-4">
-							<span class="icon-lab"></span>
-							<h4>Publicitat</h4>
-							<p>Cartells, Xarxes Socials i co-working</p>
-						</div>
-						<hr>
-						<em><a class="next-top" href="#page-header"><img class="nextt to-up" src="hipertextos/svg/arrow.svg"></a></em>
-					</div>
-				</div>
-			</div>
-			</section>
 
-			{% if page.matte-demo %}
-			<section id="matte-demo" class="demo">
-				<hr>
-				<em><h2>Creacions Digitals</h2></em>
-				<h5><small>Composició - Retòc fotogràfic - Efectes d'iluminació - Fotomontage - Tractament del color</small></h5>
-				<br>
-					<a href="/images/sondelvent/sondelvent1.jpg" data-lightbox="roadtrip"><img src="/images/sondelvent/sondelvent1.jpg" class="demos thumb-4" rel="imatges sense retocar"></a>		
-					<a href="/images/sondelvent/sondelvent2.jpg" data-lightbox="roadtrip"><img src="/images/sondelvent/sondelvent2.jpg" class="demos thumb-4" rel="imatges amb retocs parcials"></a>				
-					<a href="/images/sondelvent/sondelvent3.jpg" data-lightbox="roadtrip"><img src="/images/sondelvent/sondelvent3.jpg" class="demos thumb-4" rel="imatge del univers"></a>				
-					<a href="/images/sondelvent/sondelvent.jpg" data-lightbox="roadtrip"><img src="/images/sondelvent/sondelvent.jpg" class="demo-xl" rel="imatge final"></a>
-				<h5><small>Fotomontatge per a la banda SondelVent de Barcelona</small></h5>				
-				<p><small>Copyright: Tots els Drets Reservats</small></p>	
-				<hr>
-			</section>
-			{% endif %}
-			<section id="coffee" class="fronter">
-				<hr>
-				<em><img src="{{ site.baseurl }}/hipertextos/svg/coffee.svg" alt="imatge de tasa de cafè"></em>
-				<em><h2>Fem un Cafè?</h2></em>
-				<div class="thumb-2 pushed-5">
-					<p>Tu poses la idea i jo el cafè.<br>
-					Explica'm el que necessites i junts farem un pressupost ajustat a les teves necessitats.</p>
-				</div>
-				<em class="thumb"><u><label for="modal-two">Contactar</label></u></em>
-				<hr>
-			</section>
-    </main>
+{% include partials/head.html %}
+	<div id="blue-front" class="anm-fadeIn delay-100">
+		<div>
+			<div class="thumb-2 pushed-4 anm-moveFromLeftFade delay-700">
+				<span class="icon icon-car2"></span>
+			</div>
+			<div class="thumb-6">
+				<h6 class="anm-moveFromRightFade delay-600"><span class="icon icon-bell"></span> {{ site.info1 }}</h6>
+				<h6 class="anm-moveFromRightFade delay-700"><span class="icon icon-alarm"></span> {{ site.info2 }}</h6>
+				<h6 class="anm-moveFromRightFade delay-800"><span class="icon icon-camera"></span> {{ site.info3 }}</h6>
+				<h6 class="anm-moveFromRightFade delay-900"><span class="icon icon-credit"></span> {{ site.info4 }}</h6>
+			</div>
+			<hr>
+		</div>
+	</div>
+	<div id="mapa">
+  		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373.8077012367938!2d2.207479914111241!3d41.45090246565391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc8ded3dfcc3%3A0x94ee23eecc26f9ed!2sPasseig+de+Lloren%C3%A7+Serra%2C+5%2C+08922+Santa+Coloma+de+Gramenet%2C+Barcelona!5e0!3m2!1ses!2ses!4v1552908823611" width="100%" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<section class="cited">
+			<h4>{{ site.location }} <div><img src="{{ site.baseurl }}/hipertextos/brand/iconmetro.png" alt="Metro"></div> Santa Coloma <div class="red">L1</div></h4>
+		<a class="button-modal" href="#dialog"><span class="icon icon-search"></span> Ampliar</a>
+		</section>
+	</div>
+<main id="page-main" role="main">
+	<div id="layout">
+		<hr>
+		<div class="obtenciones">
+			<h2><small>Obtención</small><br>{{ site.obtenciones }} <b>€</b></h2>
+		</div>
+		<hr>
+		<div id="horari">
+  			{% include horari.html %} 
+		</div>
+		<hr>
+		<div id="domicili">
+  			{% include domicili.html %} 
+		</div>
+		<hr>
+	</div>
+</main>
+<div id="justeat">
+	{% include premis.html %} 
+</div>
