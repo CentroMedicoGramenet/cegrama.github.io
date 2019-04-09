@@ -46,12 +46,12 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 
 
 /* Post-Header*/
-#blue-front {padding:36px 0px 1px 0px;min-height:100%;
+#blue-front {padding:28px 0px 1px 0px;min-height:100%;
     color:var(--color-white) ;background-color:var(--color-blue);}
-#blue-front h6 {line-height: 1.1em;font-size:1.1em;font-weight: lighter;letter-spacing: 0.05em}
-#blue-front h6 svg {max-width: 25px;margin-top:-20px;border:none!important;}
-#blue-front svg {max-width:70%;border-radius:32px;}
-#blue-front hr  {margin:3px;padding:0px;}
+#blue-front h6 {line-height: 1.2em;font-size:1em;font-weight: lighter;letter-spacing: 0.05em}
+#blue-front h6 svg {max-width: 28px;margin-top:-20px;border:none!important;}
+#blue-front svg {max-width:70%;}
+#blue-front hr  {margin:1px;padding:0px;}
 /* Body & co */
 hr.lines {border-bottom:thin solid var(--color-grey);}
 .detalls a {padding-left:32px;padding-right:32px;background-color:var(--color-blue);}
@@ -210,9 +210,9 @@ section.jdialog  {}
 @media (max-width: 1242px) {
 }
 @media (max-width: 768px) {
-    #page-header.cover {height: 100%;padding-top: 45px!important;}
-    #cover-logo, #arenas {max-width:100%;height:145px;margin-bottom:-32px;margin-top:0;}
-	#page-header div em a {font-size:14px;letter-spacing:0.03em ;padding:12px 12px;width:45%;margin-bottom:6px;}
+    #page-header.cover {height: 100%;padding-top: 25px!important;}
+    #cover-logo, #arenas {max-width:100%;height:125px;margin-bottom:6px;}
+	#page-header div em a {border:2px solid ;font-size:16px;font-weight: bold; letter-spacing:0.013em ;padding:12px 12px;width:45%;margin-bottom:6px;}
 	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
     #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
     #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
