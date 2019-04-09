@@ -15,7 +15,7 @@ img.icon {width:15px;margin-left:5px;margin-right:5px;}
 #foot-cover h5 {margin-bottom:23px;}
 #foot-cover h4 {font-size:2.6em;line-height:1em;margin-bottom:48px;}
 h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-grey); }
-#layout svg {padding:15px;margin-right: 6px}
+#layout svg, #layout .icon-png img {padding:15px;margin-right: 6px}
 #rollitos-cart, #pures-cart, #cremes-cart, #amanides-cart, #xips-cart, #postres-cart, #begudes-cart {text-align: left;}
 #rollitos-cart h4 {
     margin-top:-10px;letter-spacing: -0.032em;height:40px;}
