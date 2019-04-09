@@ -5,8 +5,9 @@
     border:none;letter-spacing: .02em;overflow: hidden;text-align: center;}
 #page-header.carta-header h1 {font-weight: lighter ;font-size:2.2em;color:var(--color-white);}
 #page-nav div{height:90px;}
-#page-nav a img {width:69px;height:69px;opacity:.69;}
-#page-nav a:hover {background:var(--color-soft);}
+#page-nav p {font-size:15px;line-height: .6em;font-weight: lighter;color:var(--color-hard-grey); }
+#page-nav a img {width:60px;height:60px;opacity:.69;}
+#page-nav a:hover {background:var(--color-softgrey);}
 img.icon {width:15px;margin-left:5px;margin-right:5px;}
 .legends svg {width:18px;height:18px;padding:0px!important;margin:0px 8px 0px 8px!important;}
 #foot-cover.cover {background-image: url("/hipertextos/brand/carta.jpg");background-color:var(--color-hardgrey);background-position: top center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
@@ -45,14 +46,13 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
-    #page-header.carta-header {
-    	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
-    #foot-cover.cover {
-    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:top auto;background-position:fixed !important;}
+    #page-header.carta-header { }
+    #foot-cover.cover {}
     #page-header.carta-header { height: 190px;padding-top:69px;}
     .legends p {font-size: 12px;}
-    #page-nav div{height:69px;}
-	#page-nav a img {width:52px;height:52px;}
+    #page-nav div{height:100%;}
+	#page-nav a img {width:32px;height:32px;}
+    #page-nav p {display:none;}
 	button {background-size:80px;width:80px;height:80px;min-width:80px;
     min-height:80px;font-size:26px;letter-spacing: 0.06em;}
     #rollitos h4.headline {font-size:1.0em;}
@@ -77,6 +77,4 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
 @media (max-width: 432px) {
 	#page-header.carta-header { height: 150px;padding-top:45px;}
     #page-header.carta-header, #foot-cover.cover {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;color:var(--color-grey);}
-
-
 }
