@@ -63,7 +63,8 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #domicili {border:2px solid var(--color-blue);border-radius:16px;}
 #domicili h5 {font-weight: normal;font-size:1.1em;line-height:1.6em;
     margin-bottom:0px;margin-top:-32px;}
-#domicili span svg, #domicili span img {max-width:128px;padding:23px;}
+#domicili span svg {max-width:128px;padding:29px;}
+#domicili span img {max-width:128px;padding:23px;}
 
 #layout em a {background-color:var(--color-soft-black);color:var(--color-soft);border-radius:6px;padding-left:32px;padding-right:32px;}
 #layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-black);}
