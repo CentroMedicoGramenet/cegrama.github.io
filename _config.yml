@@ -3,7 +3,7 @@ name: Centro Médico Gramenet
 
 # Short bio or description (displayed in the header)
 description: Certificados médicos y psicotécnicos
-alternativa: Permiso de conducir y armas
+alternativa: Permiso de conducción, armas y otros
 obtenciones: 35
 
 # Info
@@ -21,7 +21,7 @@ p5: Ciclismo
 p6: Seguridad privada
 p7: Perros peligrosos
 p8: Permiso de armas
-p9: Certificados médicos
+p9: Laborales y deportivos
 
 # Horari
 mananas: de 12h a 14h
