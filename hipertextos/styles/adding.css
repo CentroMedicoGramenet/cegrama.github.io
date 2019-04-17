@@ -47,10 +47,10 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 /* Post-Header*/
 #blue-front {padding:12px 0px 1px 0px;min-height:100%;
     color:var(--color-white) ;background-color:var(--color-blue);}
-#blue-front h4 {line-height: 1em; margin:18px 0 6px 0;}
-#blue-front h6 {line-height: 1.2em;font-size:1em;font-weight: lighter;letter-spacing: 0.05em}
-#blue-front #carro svg {max-width:80%;}
-#blue-front h6 svg {max-width: 21px;margin-top:-20px;border:none!important;}
+#blue-front h4 {font-size:1.5em; line-height: 1em; margin:18px 0 18px 0;}
+#blue-front h6 {line-height: 1.2em;margin-bottom:12px;font-size:1em;font-weight: lighter;letter-spacing: 0.05em}
+#blue-front #carro svg {max-width:63%;margin-left:72px;margin-top:-36px;}
+#blue-front h6 svg {max-width: 21px;height:21px;margin:0px 10px 0px 0px;border:none!important;}
 #blue-front hr  {margin:1px;padding:0px;}
 /* Body & co */
 hr.lines {border-bottom:thin solid var(--color-grey);}
