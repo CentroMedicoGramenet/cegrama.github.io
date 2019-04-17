@@ -49,7 +49,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
     color:var(--color-white) ;background-color:var(--color-blue);}
 #blue-front h5 {font-weight: lighter ;text-align:right;margin:0px;padding-right:12px;}
 #blue-front h6 {line-height: 1.2em;font-size:1em;font-weight: lighter;letter-spacing: 0.05em}
-#blue-front svg {max-width:128px;}
+#blue-front #carro svg {max-width:128px;}
 #blue-front h6 svg {max-width: 28px;margin-top:-20px;border:none!important;}
 #blue-front hr  {margin:1px;padding:0px;}
 /* Body & co */
