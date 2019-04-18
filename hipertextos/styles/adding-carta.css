@@ -62,19 +62,12 @@ padding-left:8px;padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-8 {width:70%;margin-top:-30px;}
     .thumb-1 {width:20%;margin-top:-30px;}
     h6.title {display:none;visibility: hidden ;}
-    #salsa .thumb-6 {width:100%;margin-bottom:32px;}
-    #salsa p {font-size: 17px;}
-    #salsa h6 {font-size:32px;margin-bottom:8px;}
     #menu .thumb-6, #begudes .thumb-6 {width:100%;}
     #menu .thumb-6, #begudes .thumb-6 {width:100%;}
-    #begudes h5, #begudes h6 {line-height:1.2em;padding:0px;}
-    #begudes h5 {margin-top:15px;}
-    #begudes-cart p {font-size:15px ;line-height:1.5em;padding-top:12px;padding-bottom:6px;}
     #foot-cover h5 svg {padding:12px;}
 	#foot-cover h5 {margin-bottom:12px!important;}
 	#foot-cover h4 {font-size:1.9em;line-height:1em;margin-bottom:48px;}
 }
 @media (max-width: 432px) {
 	#page-header.carta-header { height: 150px;padding-top:45px;}
-    #page-header.carta-header, #foot-cover.cover {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;color:var(--color-grey);}
 }
