@@ -25,6 +25,7 @@ body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:non
 #site-nav .site-logo {z-index:1;overflow:hidden;width:55px;
     padding-left:0px;padding-top:0;height:100%;margin-top:0px;}
 #site-nav img {max-height:100%;min-width:100%;width:55px;height:29px;margin-top:13px;}
+#site-nav img:hover {cursor:zoom-in;}
 
 /* Header cover*/
 #page-header {color:var(--color-blue);letter-spacing: 0.0012em;}
@@ -111,7 +112,10 @@ padding-left:26px;padding-right:26px;padding-top:26px;color:var(--color-blue);bo
 #page-footer em a {background:transparent;}
 #page-footer em a:hover, #page-footer em a:focus {color:var(-color-white);}
 #footer-home img {max-width:203px;height:123px;margin-bottom:0px;}
-#page-footer p {}
+#foot {color:rgba(100,172,224,1); border-top:thin solid rgba(80,152,204,1) ;
+    padding:18px;font-size:.9em;
+}
+#foot a {color:rgba(130,202,254,1);text-decoration:none;}
 
 /* Modal expander */
 
