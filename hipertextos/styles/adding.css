@@ -66,8 +66,8 @@ hr.lines {border-bottom:thin solid var(--color-grey);}
 #domicili span svg {max-width:128px;padding:29px;}
 #domicili span img {max-width:128px;padding:23px;}
 
-#layout em a {background-color:var(--color-soft-black);color:var(--color-soft);border-radius:6px;padding-left:32px;padding-right:32px;}
-#layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-black);}
+#layout em a {margin-top:1.6em;background-color:var(--color-blue);color:var(--color-soft);border-radius:6px;padding-left:18px;padding-right:18px;}
+#layout em a:hover, #layout em a:active, #layout em a:focus {background-color:var(--color-white);color:var(--color-blue);}
 .cover-front {
 	background-position: bottom center;
 	background-attachment: fixed;display:block;
@@ -250,7 +250,6 @@ section.jdialog  {}
     #mapa h4 {font-size: 16px;line-height: 32px}
 	#mapa h4 div img {height: 20px;);margin: -.15em 0 -.15em -.5em;width:20px; }
 	#mapa h4 div {padding-left:12px;padding-right:12px;border-radius:2px;}
-	
 }
 
 @media (max-width: 432px) {
@@ -260,5 +259,4 @@ section.jdialog  {}
     #blue-front .thumb-6 {min-width:90%;margin-left:5%;}
     #blue-front h4 {font-size:1.1em;}
     #blue-front h6 {font-size:.8em;letter-spacing: -0.012em}
-
 }
