@@ -204,8 +204,13 @@ section.jdialog  {}
 		width: 90%;
 	}
 }
+@media (max-width: 1500px) {
+    #page-header.cover {height: 100%;}
+    #blue-front #carro svg {margin-top:6px;}
+}
 @media (max-width: 1250px) {
     #page-header.cover {height: 100%;padding-top: 60px;}
+	#blue-front #carro svg {max-width:85%;margin-left:28px;margin-top:18px;}
 }
 @media (max-width: 1024px) {
     #page-header.cover {height: 100%;padding-top: 15px!important;}
@@ -217,17 +222,20 @@ section.jdialog  {}
     #page-header h1 {line-height:1.2em;font-size:1.5em; }
     #page-header h5 {line-height:1.2em;font-size:1em; }
     #page-header div em a svg {display:none;}
-    #blue-front .thumb-2 {display:none;}
-    #blue-front .thumb-6 {min-width:90%;margin-left:5%;}
+    #blue-front .thumb-3 {display:none;}
+    #blue-front .thumb-6 {min-width:80%;margin-left:10%;}
     #blue-front h6 {font-weight: normal;font-size:18px;line-height:18px;margin-bottom:15px;}
-    #blue-front h6 svg {max-width:20px;height:20px;margin-top:0px;}
-    
+    #blue-front h6 svg {display:none;}
+    #blue-front #carro svg {display:none;}
+
     #cover-logo, #arenas {max-width:100%;height:69px;margin-bottom:6px;}
 	#page-header div em a {border:2px solid ;font-size:16px;font-weight: bold; letter-spacing:0.013em ;padding:12px 12px;width:45%;margin-bottom:6px;}
 	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
     #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
     #horari h4, #horari h3, #domicili h4, #domicili h3 {text-align:center!important;}
-    #horari h4, #domicili h4 {font-size:1.6em ;line-height:.75em ;padding-left:6%;padding-right:6%;}
+    #domicili h5 {font-size:.8em ;line-height:.95em ;}
+	#domicili span svg {max-width:110px;padding:35px;}
+	#domicili span img {max-width:110px;padding:32px;}
     #horari .thumb-6, #domicili .thumb-6 {width:100%;}
  	#horari i svg, #domicili i svg {background-size:150px;width:150px;height:150px;padding-left:50px;padding-right:50px;padding-top:32px;margin-bottom:12px;}
     .cover-front h2, .cover-front h3 {font-size: 15px;line-height:32px;}
@@ -241,11 +249,15 @@ section.jdialog  {}
     #mapa h4 {font-size: 16px;line-height: 32px}
 	#mapa h4 div img {height: 20px;);margin: -.15em 0 -.15em -.5em;width:20px; }
 	#mapa h4 div {padding-left:12px;padding-right:12px;border-radius:2px;}
-
+	
 }
 
 @media (max-width: 432px) {
     #page-header.cover {height: 100%;padding-top: 10px;}
     .cover-front h2, .cover-front h3 {font-size: 12px;line-height:23px;}
     .cover-front {background-size:750px;width:750px;height:230px;padding-top: 12px;}
+    #blue-front .thumb-6 {min-width:90%;margin-left:5%;}
+    #blue-front h4 {font-size:1.1em;}
+    #blue-front h6 {font-size:.8em;letter-spacing: -0.012em}
+
 }
