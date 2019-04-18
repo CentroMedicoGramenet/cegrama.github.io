@@ -26,11 +26,6 @@ main { margin-bottom: 0px;z-index: 1;background-color: var(--color-white);
     .thumb-1 {max-width:16.6666666666%;}
 }
 @media (max-width: 768px) {
-    #page-header.carta-header {
-    	background-image: url("/hipertextos/brand/carta_mcover.jpg");background-size: top auto;background-position:fixed !important;}
-    #foot-cover.cover {
-    	background-image: url("/hipertextos/brand/carta_m.jpg");background-size:top auto;background-position:fixed !important;}
-    #page-header.carta-header { height: 190px;padding-top:69px;}
     .legends p {font-size: 12px;}
     #page-nav div{height:69px;}
 	#page-nav a img {width:52px;height:52px;}
@@ -43,5 +38,4 @@ main { margin-bottom: 0px;z-index: 1;background-color: var(--color-white);
 }
 @media (max-width: 432px) {
 	#page-header.carta-header { height: 150px;padding-top:45px;}
-    #page-header.carta-header, #foot-cover.cover {background-image: url("/img/texture/grey-geek.png");background-size:198px 200px;background-repeat: repeat;color:var(--color-grey);}
 }

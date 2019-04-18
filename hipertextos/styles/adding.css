@@ -218,6 +218,7 @@ section.jdialog  {}
     #page-header h5 {line-height:1.2em;font-size:1.3em; }
 }
 @media (max-width: 768px) {
+	#cover-logo {display:none;}
     #page-header.cover {height: 100%;padding-top: 25px!important;}
     #page-header h1 {line-height:1.2em;font-size:1.5em; }
     #page-header h5 {line-height:1.2em;font-size:1em; }
@@ -228,7 +229,7 @@ section.jdialog  {}
     #blue-front h6 svg {display:none;}
     #blue-front #carro svg {display:none;}
 
-    #cover-logo, #arenas {max-width:100%;height:69px;margin-bottom:6px;}
+    #arenas {max-width:100%;height:69px;margin-bottom:6px;}
 	#page-header div em a {border:2px solid ;font-size:16px;font-weight: bold; letter-spacing:0.013em ;padding:12px 12px;width:45%;margin-bottom:6px;}
 	#page-header div em a i svg {width:15px;padding:3px 0 0 0;}
     #page-header.cover h4 {font-size:2.1em;padding-left:32px;padding-right:32px;}
