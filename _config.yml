@@ -40,8 +40,8 @@ phone2: +34 933 844 892
 email2: correu@gmail.com
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/36928139?s=460&v=4
-logo: ./hipertextos/brand/logo.png
+avatar: 
+logo: 
 
 # Sections
 section1: Revisiones
@@ -81,11 +81,11 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-139209303-1 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.weburl.com
+url: https://www.centromedicogramanet.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
