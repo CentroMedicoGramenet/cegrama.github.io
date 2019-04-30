@@ -23,7 +23,7 @@ h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-
 #layout h2 {margin-top:55px;}
 #begudes-cart h5, #begudes-cart h6 {text-align: center;}
 button {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
-    color:var(--color-white);min-height:100px;font-size:30px;letter-spacing: 0.06em;font-weight: lighter }
+    color:var(--color-white);min-height:100px;font-size:30px;letter-spacing: 0.06em;font-weight: lighter; }
 #menu h2, #menu h3 {margin:0;}
 #menu .thumb-6 h2 {text-align:right;margin-top:12px;}
 .menu-hex {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat;background-size:250px;width:250px;height:250px;border:none!important;
@@ -45,7 +45,7 @@ padding-left:8px; padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-8 {width:58.3333333333%;}
     .thumb-1 {max-width:16.6666666666%;}
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #page-header.carta-header { }
     #foot-cover.cover {}
     #page-header.carta-header { height: 190px;padding-top:69px;}
@@ -62,6 +62,7 @@ padding-left:8px; padding-top:6px;font-size:2.5em;margin-top: 40px;}
     .thumb-8 {width:70%;margin-top:-30px;}
     .thumb-1 {width:20%;margin-top:-30px;}
     h6.title {display:none;visibility: hidden ;}
+    #menu .thumb-6 h2 {text-align:center;margin-top:2px;}
     #menu .thumb-6, #begudes .thumb-6 {width:100%;}
     #menu .thumb-6, #begudes .thumb-6 {width:100%;}
     #foot-cover h5 svg {padding:12px;}
