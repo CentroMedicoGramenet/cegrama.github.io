@@ -200,6 +200,9 @@ section.jdialog  {}
 .dialog-block.bottom { width: 100% !important;}
 .jdialog iframe {border-radius:23px;}
 
+/* Vacaciones */
+#verano {color:var(--color-red);text-align:center;}
+
 @media (max-width: 768px) {
 	[class*='dialog'] {
 		overflow-x: auto;
