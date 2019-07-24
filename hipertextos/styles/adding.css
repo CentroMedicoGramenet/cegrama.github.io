@@ -201,7 +201,11 @@ section.jdialog  {}
 .jdialog iframe {border-radius:23px;}
 
 /* Vacaciones */
-#verano {color:var(--color-red);text-align:center;}
+#verano {color:var(--color-red);text-align:center;
+    border:2px solid currentcolor;margin: 6px; padding-top:15px;
+	border-radius: 8px}
+#verano {font-size: .75em; }
+
 
 @media (max-width: 768px) {
 	[class*='dialog'] {
