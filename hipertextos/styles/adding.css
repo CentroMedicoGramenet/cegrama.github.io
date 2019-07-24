@@ -6,6 +6,13 @@ text-align: center;}
 main {font-family:var(--font-default), sans-serif;padding-top:36px;margin-bottom: 0;}
 body {text-align: justify;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-o-hyphens:none;hyphens:none;word-wrap:none;}
 
+/* Vacaciones */
+#verano {color:var(--color-red);text-align:center;
+    border:2px solid currentcolor;margin: 6px; padding-top:15px;
+	border-radius: 8px}
+#verano {font-size: .75em; }
+.greys {background:var(--color-grey);}
+
 /* Nav */
 #site-nav {font-family:var(--font-default) ;opacity:0.95;background-image: linear-gradient( #fff, rgba(230,242,255,1)) !important;border-bottom: none;font-size: 15px;
     line-height:25px;color: var(--color-blue);padding-top:12px;padding-bottom:12px;}
@@ -199,13 +206,6 @@ section.jdialog  {}
 .dialog-block.top,
 .dialog-block.bottom { width: 100% !important;}
 .jdialog iframe {border-radius:23px;}
-
-/* Vacaciones */
-#verano {color:var(--color-red);text-align:center;
-    border:2px solid currentcolor;margin: 6px; padding-top:15px;
-	border-radius: 8px}
-#verano {font-size: .75em; }
-
 
 @media (max-width: 768px) {
 	[class*='dialog'] {
