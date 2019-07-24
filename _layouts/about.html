@@ -27,6 +27,11 @@
 
 	<!-- Page content -->
 	<div class="page cover-page" id="page">
+	{% if page.fiestas %}
+   		<div id="verano" class="anm-moveFromTopFade delay-600">
+    		<h5 class="anm-moveFromBottomFade delay-600">Cerramos por vacaciones del 10 al 25 de Agosto, ambos incluidos.</h5>
+		</div>
+	{% endif %}
 		{% include partials/navigation/nav.html %}
 		<header id="page-header" class="cover anm-moveFromTop" style="background-image: url('{{ site.baseurl }}/hipertextos/brand/contacte.jpg');">
 			<div class="anm-scaleUpDown delay-100">
