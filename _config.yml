@@ -57,9 +57,6 @@ section5d:
 section6: Nosotros
 section6d: Más Información
 
-# Vacaciones de Verano
-fiestas: true
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
