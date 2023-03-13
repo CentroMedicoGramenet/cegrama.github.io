@@ -22,6 +22,7 @@ h6.title {text-align:left;font-size:.75em;margin-bottom:-32px;color:var(--color-
 #rollitos-cart p, #pures-cart p, #cremes-cart p, #amanides-cart p, #xips-cart p, #postres-cart p, #begudes-cart p {margin-top:-35px;}
 #layout h2 {margin-top:55px;}
 #begudes-cart h5, #begudes-cart h6 {text-align: center;}
+.text-left {text-align: left;}
 .phone {color:#000;}
 button {background-color:transparent ;background-image: url(/hipertextos/brand/hexagonblack.png);background-repeat:no-repeat  ;background-size:100px;width:100px;height:100px;border:none!important;
     color:var(--color-white);min-height:100px;font-size:30px;letter-spacing: 0.06em;font-weight: lighter; }
